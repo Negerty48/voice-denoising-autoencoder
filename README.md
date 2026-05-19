@@ -1,1 +1,1 @@
-# voice-denoising-autoencoder
+# Voice Denoising Autoencoder
