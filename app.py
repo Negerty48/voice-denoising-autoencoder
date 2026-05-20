@@ -6,7 +6,7 @@ import tensorflow as tf
 import gradio as gr
 
 # Cargamos el modelo
-MODEL_PATH = "models/denoising_cGAN.keras" 
+MODEL_PATH = "models/denoising_autoencoder.keras" 
 autoencoder = tf.keras.models.load_model(MODEL_PATH)
 
 def limpiar_audio(ruta_audio):
