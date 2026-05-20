@@ -1,0 +1,4 @@
+kagglehub
+librosa
+matplotlib
+tensorflow
