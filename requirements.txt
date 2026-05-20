@@ -2,3 +2,5 @@ kagglehub
 librosa
 matplotlib
 tensorflow
+gradio
+soundfile
