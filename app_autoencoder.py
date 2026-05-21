@@ -51,7 +51,7 @@ def limpiar_audio(ruta_audio):
         audio_final = np.array(audio_limpio_total)
         
         # Subimos el volumen porque la frecuencia queda muy baja
-        audio_final = audio_final * 15
+        audio_final = audio_final * 2.5
         
         ruta_salida = "output_limpio_estable.wav"
         sf.write(ruta_salida, audio_final, 16000)
@@ -71,7 +71,7 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
             entrada_audio = gr.Audio(sources=["microphone", "upload"], type="filepath", label="1. Audio Original (Con Ruido)")
             boton_limpiar = gr.Button("✨ Limpiar Audio con IA", variant="primary")
             
-        with gr.Column():
+        with gr.Column(): 
             salida_audio = gr.Audio(label="2. Audio Procesado (Voz Limpia)", interactive=False)
             
     boton_limpiar.click(fn=limpiar_audio, inputs=entrada_audio, outputs=salida_audio)
