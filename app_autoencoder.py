@@ -51,7 +51,8 @@ def limpiar_audio(ruta_audio):
         audio_final = np.array(audio_limpio_total)
         
         # Subimos el volumen porque la frecuencia queda muy baja
-        audio_final = audio_final * 2.5
+        audio_final = audio_final * 50
+        
         
         ruta_salida = "output_limpio_estable.wav"
         sf.write(ruta_salida, audio_final, 16000)

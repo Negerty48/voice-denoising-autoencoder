@@ -1,8 +1,0 @@
-kagglehub
-librosa
-matplotlib
-tensorflow
-gradio
-soundfile
-transformers
-torch
