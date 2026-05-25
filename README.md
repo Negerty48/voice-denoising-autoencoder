@@ -55,5 +55,5 @@ pip install -r requirements.txt
 
 Ejecución de la App de Inferencia:
 ```bash
-python app.py
+python app.py (en función del modelo que vas a utilziar)
 ```
